@@ -4,13 +4,13 @@ class Block {
         this.lasthash = lasthash;
         this.hash = hash;
         this.data = data;
-        
+
     }
     toString() {
-        return `Block - 
+        return `Block -
         Timestamp: ${this.timestamp}
-        Lasthash : ${this.lasthash.subString(0,10)}
-        Hash     : ${this.hash.subString(0,10)}
+        Lasthash : ${this.lasthash.substring(0,10)}
+        Hash     : ${this.hash.substring(0,10)}
         Data     : ${this.data}`;
     }
 }
